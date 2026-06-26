@@ -1,0 +1,667 @@
+/**
+* Global styles
+*/
+/**
+* http://meyerweb.com/eric/tools/css/reset/ 
+* v2.0 | 20110126
+* License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: "dejavusans";
+}
+h2,
+a {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: block;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.abs {
+  position: absolute;
+}
+.rel {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clear {
+  float: none;
+  clear: both;
+  margin: 0 auto;
+  display: none;
+}
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vh-align {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.v-align {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.h-align {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.flex {
+  display: -webkit-flex;
+}
+.flex-center {
+  align-items: center;
+}
+
+.flex-vhcenter {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.center {
+  text-align: center;
+}
+
+.main-wrapper {
+}
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.aft-b:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px;
+}
+.slider-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.slider-section:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(27, 59, 65, 0.7);
+}
+.flexslider {
+  z-index: -1;
+}
+.flexslider,
+.flex-viewport,
+.slides,
+.slides li {
+  height: 100%;
+  border: none;
+  margin: 0px;
+  border-radius: 0px;
+}
+
+.main-section {
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.main-content {
+  width: 100%;
+  height: calc(100% - 6.25rem);
+  margin-top: 2.5rem;
+  /*padding-bottom:11rem;*/
+  /*background:grey;*/
+  height: 69%;
+}
+
+.footer {
+  width: 100%;
+  height: 6.25rem;
+  /*background:#D6B974;*/
+  position: absolute;
+  bottom: 0px;
+}
+.footer-line {
+  height: 6.25rem;
+  background: #d6b974;
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+}
+.footer-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-right: 16px;
+  background: rgba(27, 59, 65, 0.1);
+}
+.footer-item {
+  margin-right: 119px;
+  position: relative;
+}
+.footer-item a {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.footer-item:last-child {
+  margin-right: 0pc;
+}
+.footer-item .phone,
+.footer-item .email {
+  color: #1b3b41;
+  font-size: 16px;
+  font-family: "robotobold";
+}
+.main-content h3 {
+  color: #fcfeff;
+  font-size: 1.375rem;
+  font-family: "robotobold";
+  letter-spacing: 1px;
+}
+.main-title h1 {
+  color: #d6b974;
+  font-size: 3.875rem;
+  font-family: "robotoblack";
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+.main-title p {
+  color: white;
+  font-size: 1.875rem;
+  font-family: "robotoitalic";
+  margin-top: 2.2rem;
+}
+.download-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.download-section .button {
+  margin: 0 30px 60px 30px;
+}
+
+.button {
+  height: 6.25rem;
+  border-radius: 10px;
+  width: 490px;
+}
+.button a {
+  height: 100%;
+  width: 100%;
+  left: 0px;
+}
+.button .text {
+  width: 73%;
+  background: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 32px;
+}
+.button svg {
+  width: 70%;
+  margin-left: 10%;
+}
+.button h2 {
+  color: #1b3b41;
+  font-size: 16px;
+  font-family: "robotomedium";
+}
+.button h2 span {
+  position: relative;
+  margin-right: 1px;
+  font-size: 19px;
+  font-weight: 600;
+}
+.button h2 span.up {
+  font-size: 12px;
+  bottom: 6px;
+  right: 0;
+  font-weight: 600;
+}
+.button div:last-child {
+  width: 27%;
+  background: #d6b974;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main-overlay {
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+.left-lines {
+  width: 25%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding-top: 28%;
+}
+.right-lines {
+  width: 38%;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  padding-top: 51%;
+}
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+.phone a {
+  white-space: nowrap;
+  position: relative;
+}
+@media screen and (max-width: 1680px) {
+  html {
+    font-size: 14px;
+  }
+  .main-title h1 {
+    letter-spacing: 6px;
+  }
+  .footer-item {
+    margin-right: 90px;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .main-title h1 {
+    letter-spacing: 2px;
+  }
+  .footer-item {
+    margin-right: 80px;
+  }
+  .left-lines {
+    width: 32%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    padding-top: 33%;
+  }
+}
+@media screen and (max-width: 960px) and (orientation: portrait) {
+  .main-content {
+    height: 73%;
+  }
+  .download-section {
+    flex-direction: column;
+    width: 90%;
+    max-width: 320px;
+  }
+  .button {
+    width: 100%;
+  }
+  .download-section .button {
+    margin: 0 0 30px 0;
+  }
+  .main-title {
+    width: 90%;
+    max-width: 320px;
+    text-align: center;
+  }
+  .footer-item {
+    margin-right: 20px;
+  }
+  .footer-icon {
+    margin-right: 10px;
+  }
+  .main-title h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .main-title p {
+    font-size: 18px;
+    margin-top: 1.3rem;
+  }
+  .footer,
+  .footer-line,
+  .button {
+    height: 60px;
+  }
+  .button-icon {
+    width: 23% !important;
+  }
+  .button {
+    margin-bottom: 30px;
+  }
+  .button .text {
+    padding-left: 14px;
+    width: 77%;
+  }
+  .button:last-child {
+    margin-bottom: 0px;
+  }
+  .button svg {
+    width: 69%;
+  }
+
+  .button .text h2 {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .footer-item .phone,
+  .footer-item .email {
+    font-size: 13px;
+  }
+  .footer-item text {
+    width: 73%;
+  }
+  .main-title p {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  .footer-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 7px;
+  }
+  .left-lines {
+    width: 0px;
+  }
+  .right-lines {
+    width: 57%;
+    padding-top: 78%;
+  }
+  .button .text h2 {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .button h2 span {
+    position: relative;
+    margin-right: 1px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .button h2 span.up {
+    font-size: 10px;
+    bottom: 6px;
+    right: 0;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 960px) and (orientation: landscape) {
+  .download-section {
+    /*flex-direction:column;*/
+    width: auto;
+    width: 70%;
+    max-width: 90%;
+    /*width:90%;*/
+    /*max-width:320px;*/
+  }
+  .button {
+    /*width:300px;*/
+  }
+  .main-title {
+    width: 90%;
+    /*max-width: 320px;*/
+    text-align: center;
+  }
+  .footer-item {
+    margin-right: 20px;
+  }
+  .footer-icon {
+    margin-right: 7px;
+  }
+  .main-title h1 {
+    font-size: 40px;
+    /*line-height: 48px;*/
+  }
+  .main-title p {
+    font-size: 18px;
+    margin-top: 1.3rem;
+  }
+  .footer,
+  .footer-line,
+  .button {
+    height: 55px;
+  }
+  .button {
+    width: 47%;
+  }
+  .button:last-child {
+    margin-bottom: 0px;
+  }
+  .button svg {
+    width: 65%;
+  }
+  .main-content {
+    margin-top: 1.2rem;
+  }
+  .main-content h3 {
+    font-size: 15px;
+  }
+  .button .text {
+    padding-left: 16px;
+    padding-right: 5px;
+  }
+  .text h2 {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .footer-item .phone,
+  .footer-item .email {
+    font-size: 13px;
+  }
+  .main-title p {
+    font-size: 16px;
+    margin-top: 16px;
+  }
+  .footer-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .button h2 span {
+    position: relative;
+    margin-right: 1px;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .button h2 span.up {
+    font-size: 10px;
+    bottom: 6px;
+    right: 0;
+    font-weight: 500;
+  }
+}
