@@ -453,10 +453,13 @@ a[href^="mailto"]{
   text-decoration: none; /* Remove underline. */
   /* Additional css `propery: value;` pairs here */
 }
-.phone a {
+
+.phone a,
+.email a {
   white-space: nowrap;
   position: relative;
 }
+
 @media screen and (max-width: 1680px) {
   html {
     font-size: 14px;
