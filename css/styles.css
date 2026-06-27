@@ -446,7 +446,9 @@ html {
   bottom: 0px;
   padding-top: 51%;
 }
-a[href^="tel"] {
+
+a[href^="tel"],
+a[href^="mailto"]{
   color: inherit; /* Inherit text color of parent element. */
   text-decoration: none; /* Remove underline. */
   /* Additional css `propery: value;` pairs here */
